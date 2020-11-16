@@ -4,15 +4,16 @@ import { Button } from '@material-ui/core';
 import Search from './Search';
 
 function Banner() {
-	const [showSearch, setshowSearch] = useState(false)
+	const [ showSearch, setshowSearch ] = useState(false);
 	return (
 		<div className="banner">
-			<div className="banner__serach" >
+			<div className="banner__serach">
 				{/* this is like a terinary but only one conditional action */}
-				{showSearch && <Search/>}
-			<Button onClick={()=> setshowSearch(!showSearch)} className="banner__serachButton" variant="outlined">
-				Serach Dates
-			</Button>
+				{showSearch && <Search />}
+
+				<Button onClick={() => setshowSearch(!showSearch)} className="banner__serachButton" variant="outlined">
+					{showSearch ? 'Hide' : 'Show Dates'}
+				</Button>
 			</div>
 			<div className="banner__info">
 				<h1> Get out and stretch your imagination</h1>
