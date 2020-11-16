@@ -1,5 +1,54 @@
+.header {
+    /* makes everyhting go into a row */
+    display: flex;
+    /* move the components as far apart as possible */
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top:0;
+    background-color: white;
+    z-index: 100;
+    width: 100%;
+
+}
+
 .header__icon {
     object-fit: contain;
-    height: 100px;
-    margin-left: 20px
+    height: 50px;
+    margin-left: 20px;
+    padding-top: 20px;
+    /* padding-left: 30px; */ 
+  
+}
+
+.header__center{
+    /* this flex 1 puts the item directly center to other child  */
+    flex: 1 ;
+    padding-top:35px;
+    padding-left: 10px;
+    display: center;
+    /* this fits the conent center */
+    max-width: fit-content;
+    padding: 10px;
+    height: 30px;
+    border: 1px solid lightgray;
+    border-radius: 999px;
+}
+
+.header__center > input {
+    border: none;
+    padding: 10px;
+    /* this removes the input outline */
+    outline-width: 0;
+    width: 250px;
+
+
+}
+
+.header__right{
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 15vw;
+margin-right: 80px;
 }
