@@ -20,3 +20,19 @@
     color: white;
     text-transform: inherit;
 }
+/* when ever we style a Material UI Tag we need to put !important  */
+.banner__serach {
+    display: flex;
+    /* should span the width of the screen */
+    flex-direction: column;
+    /* flex-flow: column; */
+
+}
+
+.banner__serachButton {
+    background-color: white !important;
+    font-weight: 900 !important;
+    text-transform: inherit !important;
+    color: #ff7779 !important
+}
+
